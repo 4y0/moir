@@ -1,0 +1,27 @@
+{
+  "name": "moir",
+  "version": "1.0.0",
+  "description": "A simple util for random value generation",
+  "main": "moir.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4y0/moir.git"
+  },
+  "keywords": [
+    "javascript",
+    "regex"
+  ],
+  "author": "4y0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4y0/moir/issues"
+  },
+  "homepage": "https://github.com/4y0/moir#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.0.2"
+  }
+}

@@ -10,3 +10,4 @@
 * CB Processor      ⏳
 * Escape Sequencer  ⏳
 * |-ied piper       ⏳
+* \d \w \W \D [^abcd] e.t.c. ⏳

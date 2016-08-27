@@ -30,6 +30,6 @@ function moir(str){
 		generated_string += p.str;
 	});
 
-	console.log(generated_string);
+	return generated_string;
 }
-module.exports = moir; 
+module.exports = moir;   

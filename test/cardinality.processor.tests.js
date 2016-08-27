@@ -9,7 +9,7 @@ describe("#CardinalityProcessorTests", function () {
 	it('Should return {type:null,start:null,stop:null,next_index:1} for abcde', function() {
 
 		var cardinality = CardinalityProcessor.getCardinality('abcde');
-		expect(cardinality).to.have.property('type').to.equal(null);
+		expect(cardinality).to.have.property('type').to.equal('none');
 		expect(cardinality).to.have.property('next_index').to.equal(1);
 
 	});
@@ -17,7 +17,7 @@ describe("#CardinalityProcessorTests", function () {
 	it('Should return {type:null,start:null,stop:null,next_index:1} for a{2,3bcde', function() {
 
 		var cardinality = CardinalityProcessor.getCardinality('a{2,3bcde');
-		expect(cardinality).to.have.property('type').to.equal(null);
+		expect(cardinality).to.have.property('type').to.equal('none');
 		expect(cardinality).to.have.property('next_index').to.equal(1);
 
 	});

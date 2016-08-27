@@ -106,5 +106,22 @@ describe("#CardinalityProcessorTests", function () {
 		expect(errorThrowTest).to.throw("String value expected, got undefined");
 	});
 
+	it('Should throw "Index not readable"', function() {
+
+		function errorThrowTest(){
+			var cardinality = CardinalityProcessor.getCardinality('sss',9);
+		}
+		expect(errorThrowTest).to.throw("Index not readable");
+	});
+
+
+	it('Should throw "String value expected, got object"', function() {
+
+		function errorThrowTest(){
+			var cardinality = CardinalityProcessor.getCardinality({});
+		}
+		expect(errorThrowTest).to.throw("String value expected, got object");
+	});
+
 
 });
